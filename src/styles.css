@@ -1,0 +1,46 @@
+.carousel {
+  width: 40em;
+  height: 10em;
+  border: solid 1px #ccc;
+  position: relative;
+}
+.carousel__buttons {
+  width: 100%;
+  position: absolute;
+}
+
+.carousel__buttons__previous {
+  position: absolute;
+  left: -0.5em;
+  top: 5em;
+  border-radius: 0.5em;
+}
+
+.carousel__buttons__next {
+  position: absolute;
+  right: -0.5em;
+  top: 5em;
+  border-radius: 0.5em;
+}
+
+.carousel__slides {
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  overflow-scolling: touch;
+}
+
+.carousel__slide {
+  background: #ccc;
+  flex-shrink: 0;
+  width: 60%;
+  /* border: solid 1px #00f; */
+  margin: 0 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  scroll-snap-align: center;
+}
